@@ -1,12 +1,11 @@
-.main-container{
-   display: flex;
+.main-container {
+    display: flex;
     justify-content: center;
     margin-top: 2%;
     padding-bottom: 20vh;
-    
-   
+
 }
-.main{
+.main {
     display: grid;
     @media (min-width: $tablet) {
         grid-template-columns: 50% 20%;
@@ -15,9 +14,8 @@
         grid-template-columns: 1fr;
     }
     width: 80%;
-  
 
-    &__cards{
+    &__cards {
         display: grid;
         grid-gap: 0.5rem;
         margin-top: 10vh;
@@ -26,35 +24,34 @@
         }
 
         @media (max-width: $mobile) {
-         margin-left: 5vw;
+            margin-left: 5vw;
 
         }
-        
+
         @media (max-width: $smallMobile) {
             font-size: 1rem;
         }
 
-       
     }
-    
+
 }
 
-
-.main-button{
+.main-button {
     cursor: pointer;
     margin-top: 10vh;
     padding: 2% 5%;
-    border: 1px  solid transparent;
-    color:$border;
+    border: 1px solid transparent;
+    color: $border;
     background: none;
     position: relative;
-    border-image-source: linear-gradient(to right top,$border_button 30%,  transparent 50%, transparent 30%, $border_button 80%);
+    border-image-source: linear-gradient(to right top,$border_button 30%, transparent 50%, transparent 30%, $border_button 80%);
     border-image-slice: 1;
 
-    &:hover{
-        box-shadow: 0px 0px 6px $border_button;
+    &:hover {
+        box-shadow: 0 0 6px $border_button;
     }
-    &::after, &::before{
+    &::after,
+    &::before {
         content: ' ';
         display: block;
         width: 5px;
@@ -62,86 +59,78 @@
         position: absolute;
     }
 
-    &::after{
+    &::after {
         top: 0;
         right: 0;
         border-top: 2px solid $higlight;
         border-right: 2px solid $higlight;
-        box-shadow: 0px 0px 4px $higlight;
+        box-shadow: 0 0 4px $higlight;
     }
-    &::before{
+    &::before {
         bottom: 0;
         left: 0;
         border-bottom: 2px solid $higlight;
         border-left: 2px solid $higlight;
-        box-shadow: 0px 0px 4px $higlight;
+        box-shadow: 0 0 4px $higlight;
     }
 }
 
-
-.main__h1{
+.main__h1 {
     display: inline-block;
-    margin-bottom:-2%;
-font-size: 4.3rem;
-background: linear-gradient(90deg, $main_color 10%, $h1_color 70%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-z-index: 5;
+    margin-bottom: -2%;
+    font-size: 4.3rem;
+    background: linear-gradient(90deg, $main_color 10%, $h1_color 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 5;
 
-@media (max-width: $desktop) {
-    font-size: 4rem;
-}
-@media (max-width: $tablet) {
-    font-size: 3.5rem;
-}
+    @media (max-width: $desktop) {
+        font-size: 4rem;
+    }
+    @media (max-width: $tablet) {
+        font-size: 3.5rem;
+    }
 
-@media (max-width: $mobile) {
-    font-size: 3rem;
-}
+    @media (max-width: $mobile) {
+        font-size: 3rem;
+    }
 
-@media (max-width: $smallMobile) {
-    font-size: 2.5rem;
+    @media (max-width: $smallMobile) {
+        font-size: 2.5rem;
+    }
 }
-}
-.main__p{
+.main__p {
     font-size: 2rem;
     margin-top: 0;
     background: linear-gradient(90deg, $main_color 10%, $h1_color 70%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
-@media (max-width: $tablet) {
-    font-size: 1.8rem;
-}
-
-@media (max-width: $mobile) {
-    font-size: 1.6rem;
-}
-
-@media (max-width: $smallMobile) {
-    font-size: 1.3rem;
-}
+    @media (max-width: $tablet) {
+        font-size: 1.8rem;
     }
 
-.main__description{
-    display: block;
-    grid-column:1/2;
+    @media (max-width: $mobile) {
+        font-size: 1.6rem;
+    }
+
+    @media (max-width: $smallMobile) {
+        font-size: 1.3rem;
+    }
 }
 
-.main__line{
+.main__description {
+    display: block;
+    grid-column: 1/2;
+}
+
+.main__line {
     margin-left: 10vw;
     width: 25vw;
-	height: 10vh;
+    height: 10vh;
     border-bottom: 1px solid $border_shadow;
     border-left: 1px solid $border_shadow;
     -webkit-transform: skew(20deg);
-	   -moz-transform: skew(20deg);
-	     -o-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
 }
-
-
-
-
-
-
-
