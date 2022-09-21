@@ -1,0 +1,128 @@
+.main-container{
+   display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    padding-bottom: 20vh;
+    
+   
+}
+.main{
+    display: grid;
+    @media (min-width: $mobile) {
+        grid-template-columns: 50% 20%;
+    }
+
+    width: 80%;
+  
+
+    &__cards{
+        display: grid;
+        grid-gap: 0.5rem;
+        margin-top: 10vh;
+        @media (min-width: $mobile) {
+            grid-column: 2/3;
+        }
+
+        @media (max-width: $mobile) {
+            font-size: 2rem;
+
+        }
+        
+        @media (max-width: $smallMobile) {
+            font-size: 1rem;
+        }
+
+       
+    }
+    
+}
+
+
+.main-button{
+    cursor: pointer;
+    margin-top: 10vh;
+    padding: 2% 5%;
+    border: 1px  solid transparent;
+    color:$border;
+    background: none;
+    position: relative;
+    border-image-source: linear-gradient(to right top,$border_button 30%,  transparent 50%, transparent 30%, $border_button 80%);
+    border-image-slice: 1;
+
+    &:hover{
+        box-shadow: 0px 0px 6px $border_button;
+    }
+    &::after, &::before{
+        content: ' ';
+        display: block;
+        width: 5px;
+        height: 5px;
+        position: absolute;
+    }
+
+    &::after{
+        top: 0;
+        right: 0;
+        border-top: 2px solid $higlight;
+        border-right: 2px solid $higlight;
+        box-shadow: 0px 0px 4px $higlight;
+    }
+    &::before{
+        bottom: 0;
+        left: 0;
+        border-bottom: 2px solid $higlight;
+        border-left: 2px solid $higlight;
+        box-shadow: 0px 0px 4px $higlight;
+    }
+}
+
+.main__h1{
+    margin-bottom:-2%;
+font-size: 4.3rem;
+background: linear-gradient(90deg, $main_color 10%, $h1_color 70%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+@media (max-width: $tablet) {
+    font-size: 3rem;
+}
+
+@media (max-width: $mobile) {
+    font-size: 2rem;
+}
+
+@media (max-width: $smallMobile) {
+    font-size: 1.3rem;
+}
+}
+.main__p{
+    font-size: 2rem;
+    margin-top: 0;
+    background: linear-gradient(90deg, $main_color 10%, $h1_color 70%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+@media (max-width: $tablet) {
+    font-size: 1.7rem;
+}
+
+@media (max-width: $mobile) {
+    font-size: 1.5rem;
+}
+
+@media (max-width: $smallMobile) {
+    font-size: 1rem;
+}
+    }
+
+.main__description{
+    grid-column:1/2;
+}
+
+
+
+
+
+
+
+

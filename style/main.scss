@@ -1,0 +1,16 @@
+@import './color';
+@import './card';
+@import './header';
+@import './content';
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+body{
+    font-family: 'Roboto';
+    background: url(../image/background.png)no-repeat center center fixed;
+    background-size: cover;
+}
