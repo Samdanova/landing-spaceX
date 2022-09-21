@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
+    z-index: 1;
 }
 
 .card{
@@ -25,6 +26,13 @@
     &:hover{
         background: linear-gradient(130deg, rgba(224, 223, 213, 0.03) 0%, rgba(224, 223, 213, 0.03) 50%, rgba(237, 236, 226, 0.5) 100%);;
     }
+
+    @media (max-width: $mobile) {
+        background: linear-gradient(130deg, rgba(224, 223, 213, 0.1) 0%, rgba(224, 223, 213, 0.1) 50%, rgba(237, 236, 226, 0.3) 100%);
+        &:hover{
+            background: linear-gradient(130deg, rgba(224, 223, 213, 0.1) 0%, rgba(224, 223, 213, 0.12) 50%, rgba(237, 236, 226, 0.7) 100%);
+        }
+    }
 }
 
 
@@ -33,20 +41,43 @@
     &:hover{
         background: linear-gradient(225deg, rgba(224, 223, 213, 0.03) 0%, rgba(224, 223, 213, 0.03) 50%, rgba(237, 236, 226, 0.5) 100%);;
     }
+
+    @media (max-width: $mobile) {
+        background: linear-gradient(225deg, rgba(224, 223, 213, 0.1) 0%, rgba(224, 223, 213, 0.1) 50%, rgba(237, 236, 226, 0.3) 100%);
+        &:hover{
+            background: linear-gradient(225deg, rgba(224, 223, 213, 0.1) 0%, rgba(224, 223, 213, 0.12) 50%, rgba(237, 236, 226, 0.7) 100%);;
+        }
+    }
 }
 
 .main_cards-3{
     background: linear-gradient(45deg, rgba(224, 223, 213, 0.03) 0%, rgba(224, 223, 213, 0.03) 50%, rgba(237, 236, 226, 0.3) 100%);
     &:hover{
-        background: linear-gradient(45deg, rgba(224, 223, 213, 0.03) 0%, rgba(224, 223, 213, 0.03) 50%, rgba(237, 236, 226, 0.5) 100%);;
+        background: linear-gradient(45deg, rgba(224, 223, 213, 0.03) 0%, rgba(224, 223, 213, 0.03) 50%, rgba(237, 236, 226, 0.5) 100%);}
+
+        @media (max-width: $mobile) {
+            background: linear-gradient(45deg, rgba(224, 223, 213, 0.1) 0%, rgba(224, 223, 213, 0.1) 50%, rgba(237, 236, 226, 0.5) 100%);
+            &:hover{
+                background: linear-gradient(45deg, rgba(224, 223, 213, 0.1) 0%, rgba(224, 223, 213, 0.12) 50%, rgba(237, 236, 226, 0.7) 100%);
+        
     }
 }
+}
+
 
 .main_cards-4{
     background: linear-gradient(315deg, rgba(224, 223, 213, 0.03) 0%, rgba(224, 223, 213, 0.03) 50%, rgba(237, 236, 226, 0.3) 100%);
     &:hover{
         background: linear-gradient(315deg, rgba(224, 223, 213, 0.03) 0%, rgba(224, 223, 213, 0.03) 50%, rgba(237, 236, 226, 0.5) 100%);;
     }
+
+    @media (max-width: $mobile) {
+        background: linear-gradient(315deg, rgba(224, 223, 213, 0.1) 0%, rgba(224, 223, 213, 0.1) 50%, rgba(237, 236, 226, 0.5) 100%);
+        &:hover{
+            background: linear-gradient(315deg, rgba(224, 223, 213, 0.1) 0%, rgba(224, 223, 213, 0.12) 50%, rgba(237, 236, 226, 0.7) 100%);;
+        }
+    }
+    
 }
 
 .main_cards_number{
@@ -78,10 +109,10 @@
     }
     
     @media (max-width: $mobile) {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     
     @media (max-width: $smallMobile) {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
